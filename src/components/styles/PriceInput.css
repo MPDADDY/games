@@ -12,7 +12,6 @@
 
 #lowerPrice::-webkit-inner-spin-button,
 #lowerPrice::-webkit-outer-spin-button {
-  -webkit-appearance: none;
   appearance: none;
 }
 

@@ -19,15 +19,15 @@ function Detail() {
   return (
     <>
       <Navbar data="Game Details" />
-      <main className="detail__container">
+      <main className="detail-container">
         {gameDetail ? (
-          <div className="detail__contents">
-            <div className="header__detail">
+          <div className="detail-contents">
+            <div className="header-detail">
               <h2>{gameDetail.info.title}</h2>
               <img src={gameDetail.info.thumb} alt="" />
             </div>
-            <div className="lineThrough" />
-            <div className="cheapPrice">
+            <div className="line-through" />
+            <div className="cheap-price">
               <span className="container">
                 <h2 className="title">
                   <span className="title-word title-word-1">Cheapest</span>
@@ -45,9 +45,9 @@ function Detail() {
                 </h2>
               </span>
             </div>
-            <div className="lineThrough" />
+            <div className="line-through" />
             {gameData ? (
-              <div className="rating__detail">
+              <div className="rating-detail">
                 {gameData.find((game) => game.id === id) ? (
                   gameData.map((game) => {
                     if (game.id === id) {

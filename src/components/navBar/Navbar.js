@@ -39,7 +39,7 @@ const Navbar = ({ data, year }) => (
 
 Navbar.propTypes = {
   data: PropTypes.string.isRequired,
-  year: PropTypes.number,
+  year: PropTypes.number.isRequired,
 };
 
 export default Navbar;

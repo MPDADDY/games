@@ -11,7 +11,7 @@ describe('test all reducer', () => {
       gameData: [],
       gameDetail: null,
       loading: false,
-      error: "",
+      error: '',
     });
   });
 
@@ -32,7 +32,7 @@ describe('test all reducer', () => {
     const state = gameReducer(initialState, fetchGamesAsync.fulfilled(payload));
     expect(state.loading).toBe(false);
     expect(state.gameData.length).toEqual(1);
-    expect(state.error).toEqual("");
+    expect(state.error).toEqual('');
   });
 
   it('test fetchGameDetail working properly', () => {
@@ -51,11 +51,11 @@ describe('test all reducer', () => {
     ];
     const state = gameReducer(
       initialState,
-      fetchGameDetails.fulfilled(payload)
+      fetchGameDetails.fulfilled(payload),
     );
     expect(state.loading).toBe(false);
     expect(state.gameDetail.length).toEqual(1);
-    expect(state.error).toEqual("");
+    expect(state.error).toEqual('');
   });
 
   it('test fetchGamesByTitle working properly', () => {
@@ -74,10 +74,10 @@ describe('test all reducer', () => {
     ];
     const state = gameReducer(
       initialState,
-      fetchGamesByTitle.fulfilled(payload)
+      fetchGamesByTitle.fulfilled(payload),
     );
     expect(state.loading).toBe(false);
     expect(state.gameData.length).toEqual(1);
-    expect(state.error).toEqual("");
+    expect(state.error).toEqual('');
   });
 });

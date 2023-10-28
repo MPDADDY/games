@@ -49,7 +49,7 @@ describe('Detail Component', () => {
         <BrowserRouter>
           <Detail />
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     );
 
     const gameTitleElement = screen.getByText('Game Title');

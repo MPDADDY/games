@@ -17,7 +17,7 @@
 
 body {
   min-width: 424px;
-  background-image: url(./assets/Wallpaper\ phone\ 4k\ -\ Japanese\ style\ neon\ shallows.jpeg);
+  background-image: url("./assets/Wallpaper\ phone\ 4k\ -\ Japanese\ style\ neon\ shallows.jpeg");
   background-repeat: repeat;
   background-size: auto;
   background-position: center;
@@ -31,7 +31,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(https://i.pinimg.com/564x/82/61/d4/8261d4f6401da8f98407e175cde46ad5.jpg);
+  background-image: url("https://i.pinimg.com/564x/82/61/d4/8261d4f6401da8f98407e175cde46ad5.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -48,34 +48,34 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(38, 4, 4, 0.536);
+  background: rgb(38 4 4 / 53.6%);
   z-index: 1;
 }
 
-.hero__title {
+.hero-title {
   position: absolute;
   z-index: 2;
   text-shadow: 1px 1px 1px #db005b, -1px -1px 1px #00a0d2;
 }
 
-.search__input {
+.search-input {
   position: absolute;
   z-index: 4;
 }
 
-.games__container {
+.games-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin: 0 13px 0 13px;
+  margin: 0 13px;
 }
 
-#filter__container {
+#filter-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 13px 10px 13px;
+  padding: 10px 13px;
   background-color: #3e0e0edf;
 }
 
@@ -83,7 +83,7 @@ body {
 
 /* ----------------------------Detail CSS Starts Here------------------------------ */
 
-.detail__container {
+.detail-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,22 +93,19 @@ body {
   position: relative;
   border: 2px solid #db005b;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
 }
 
-.detail__container::before {
+.detail-container::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: linear-gradient(135deg, #00c896, #aa0147);
   opacity: 0.5;
   z-index: -1;
 }
 
-.detail__contents {
+.detail-contents {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -118,15 +115,15 @@ body {
   color: #fff;
 }
 
-.detail__contents .loading {
+.detail-contents .loading {
   font-size: 1.5em;
 }
 
-.detail__contents .deals {
+.detail-contents .deals {
   margin-top: 20px;
 }
 
-.header__detail > h2 {
+.header-detail > h2 {
   font-style: italic;
   text-align: end;
   line-height: 40px;
@@ -135,12 +132,12 @@ body {
   text-shadow: 1px 1px 1px #db005b, -1px -1px 1px #00a0d2;
 }
 
-.detail__contents .deals h2 {
+.detail-contents .deals h2 {
   font-size: 1.2em;
   color: #67ffd9;
 }
 
-.detail__contents .deal {
+.detail-contents .deal {
   width: 400px;
   margin: 10px 0;
   border-top: 2px solid #67ffd9;
@@ -150,30 +147,30 @@ body {
   gap: 15px;
 }
 
-.detail__contents .no-deals {
+.detail-contents .no-deals {
   font-weight: bold;
   color: #67ffd9;
 }
 
-.header__detail {
+.header-detail {
   width: 350px;
   display: flex;
   flex-direction: row-reverse;
   gap: 30px;
 }
 
-.header__detail > img {
+.header-detail > img {
   width: 70%;
   border-radius: 10px;
   margin: 10px 0;
 }
 
-.lineThrough {
+.line-through {
   width: 300px;
   border-bottom: 1px solid #67ffd9;
 }
 
-.cheapPrice {
+.cheap-price {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -237,7 +234,7 @@ body {
   }
 }
 
-.rating__detail {
+.rating-detail {
   display: flex;
   justify-content: center;
   text-align: left;
@@ -257,8 +254,8 @@ body {
   border-bottom: 1px solid #aa0147;
 }
 
-@media screen and (max-width: 600px) {
-  .detail__container {
+@media screen and (width <= 600px) {
+  .detail-container {
     max-width: 600px;
   }
 }

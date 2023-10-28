@@ -15,7 +15,7 @@ describe('Home Component', () => {
         gameData: [],
         gameDetail: null,
         loading: false,
-        error: "",
+        error: '',
       },
     };
 

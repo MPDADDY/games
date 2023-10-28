@@ -10,7 +10,7 @@ test('Navbar component snapshot', () => {
   const { asFragment } = render(
     <MemoryRouter>
       <Navbar data={data} year={year} />
-    </MemoryRouter>
+    </MemoryRouter>,
   );
 
   expect(asFragment()).toMatchSnapshot();

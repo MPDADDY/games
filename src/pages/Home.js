@@ -33,21 +33,21 @@ function Home() {
     <>
       <Navbar data="Gamers' Creed" year={2023} />
       <header className="hero">
-        <h1 className="hero__title">Gaming Is Not A Crime</h1>
+        <h1 className="hero-title">Gaming Is Not A Crime</h1>
         <SearchGames
           searchQuery={searchQuery}
           handleSearchInputChange={handleSearchInputChange}
           handleSearchSubmit={handleSearchSubmit}
         />
       </header>
-      <div id="filter__container">
+      <div id="filter-container">
         <PriceInput
           priceFilter={priceFilter}
           handlePriceInputChange={handlePriceInputChange}
           handlePriceFilter={handlePriceFilter}
         />
       </div>
-      <div className="games__container">
+      <div className="games-container">
         <GameItems searchQuery={searchQuery} />
       </div>
     </>
