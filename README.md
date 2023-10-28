@@ -27,9 +27,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Country Data <a name="about-project"></a>
+# 📖 Games <a name="about-project"></a>
 
-**Country Data** is a simple app created by React.js that display a filter able country list with title, flag and area. By clicking on the contry it displays some details about that country on a specfic page.
+**Games** is an application that displas anumber of game and shows the prices and some other game details.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Contry Data Live Link](https://globe-app.onrender.com/)
+- [Contry Data Live Link](https://mpdaddy.github.io/games/)
 
 ## Presentation Video <a name="video-presentation"></a>
 
@@ -86,7 +86,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:Al-Amin-Khan-Shakil/country-canvas.git
+  git clone git@github.com:MPDADDY/games.git
 ```
 
 ### Install
@@ -123,7 +123,7 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **More Details About Country**
+- **More Details About games**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,7 +133,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Al-MPDADDY/newsapp/issues).
+Feel free to check the [issues page](https://github.com/MPDADDY/games/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
