@@ -3,10 +3,10 @@ import gameReducer, {
   fetchGamesAsync,
   fetchGamesByTitle,
   initialState,
-} from "../redux/Slices/gameSlice";
+} from '../redux/Slices/gameSlice';
 
-describe("test all reducer", () => {
-  it("test initial state", () => {
+describe('test all reducer', () => {
+  it('test initial state', () => {
     expect(gameReducer(initialState, {})).toEqual({
       gameData: [],
       gameDetail: null,
@@ -15,18 +15,18 @@ describe("test all reducer", () => {
     });
   });
 
-  it("test fetchGamesAsync working properly", () => {
+  it('test fetchGamesAsync working properly', () => {
     const payload = [
       {
         id: 191458,
-        name: "SOULCALIBUR VI Deluxe Edition",
+        name: 'SOULCALIBUR VI Deluxe Edition',
         rating: 0,
         textRating: null,
         score: 0,
-        normalPrice: "89.99",
-        salePrice: "11.48",
+        normalPrice: '89.99',
+        salePrice: '11.48',
         thumb:
-          "https://gamersgatep.imgix.net/0/6/d/276387a0ccc7a64ca7cc0bb79cc88f58d9446d60.jpg?auto=&w=",
+          'https://gamersgatep.imgix.net/0/6/d/276387a0ccc7a64ca7cc0bb79cc88f58d9446d60.jpg?auto=&w=',
       },
     ];
     const state = gameReducer(initialState, fetchGamesAsync.fulfilled(payload));
@@ -35,18 +35,18 @@ describe("test all reducer", () => {
     expect(state.error).toEqual("");
   });
 
-  it("test fetchGameDetail working properly", () => {
+  it('test fetchGameDetail working properly', () => {
     const payload = [
       {
         id: 191458,
-        name: "SOULCALIBUR VI Deluxe Edition",
+        name: 'SOULCALIBUR VI Deluxe Edition',
         rating: 0,
         textRating: null,
         score: 0,
-        normalPrice: "89.99",
-        salePrice: "11.48",
+        normalPrice: '89.99',
+        salePrice: '11.48',
         thumb:
-          "https://gamersgatep.imgix.net/0/6/d/276387a0ccc7a64ca7cc0bb79cc88f58d9446d60.jpg?auto=&w=",
+          'https://gamersgatep.imgix.net/0/6/d/276387a0ccc7a64ca7cc0bb79cc88f58d9446d60.jpg?auto=&w=',
       },
     ];
     const state = gameReducer(
@@ -58,18 +58,18 @@ describe("test all reducer", () => {
     expect(state.error).toEqual("");
   });
 
-  it("test fetchGamesByTitle working properly", () => {
+  it('test fetchGamesByTitle working properly', () => {
     const payload = [
       {
         id: 191458,
-        name: "SOULCALIBUR VI Deluxe Edition",
+        name: 'SOULCALIBUR VI Deluxe Edition',
         rating: 0,
         textRating: null,
         score: 0,
-        normalPrice: "89.99",
-        salePrice: "11.48",
+        normalPrice: '89.99',
+        salePrice: '11.48',
         thumb:
-          "https://gamersgatep.imgix.net/0/6/d/276387a0ccc7a64ca7cc0bb79cc88f58d9446d60.jpg?auto=&w=",
+          'https://gamersgatep.imgix.net/0/6/d/276387a0ccc7a64ca7cc0bb79cc88f58d9446d60.jpg?auto=&w=',
       },
     ];
     const state = gameReducer(
